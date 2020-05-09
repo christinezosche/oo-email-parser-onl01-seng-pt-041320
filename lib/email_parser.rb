@@ -7,7 +7,11 @@ class EmailAddressParser
   
   def parse
     @email_addresses.split(" ").each do |address|
-      if address.include?(",").pop
+      if address.end_with?(",").pop
+      end
+    end
+      @email_addresses.uniq
+    end
   end
 end
   
