@@ -6,7 +6,7 @@ class EmailAddressParser
   end
   
   def parse
-    @email_addresses.delete ","
+    @email_addresses.delete(",")
     @email_addresses.split(" ").uniq
   end
 end
